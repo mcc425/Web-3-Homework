@@ -1,0 +1,14 @@
+#new{
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        width: 320px;
+        height: 2006px;
+      }
+      
+         .item {
+           padding: 50px;
+      }
+      
+}
