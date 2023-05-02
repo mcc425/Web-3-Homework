@@ -18,16 +18,25 @@
       grid-template-columns: 1fr;
   }
 
-  @include md{
-      grid-template-columns: 50% 50% 0%;
-      
-  }    
-  @include lg{
-      grid-template-columns: 60% 40% 0%;
-}
-
+      @include md{
+       ul{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+        grid-gap: 4px;
+   
+    }
+  }
+ 
+      @include lg{
+        ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-gap: 4px;
+        }  
+      }
+    
   @include xl{
        grid-template-columns: 70% auto auto;
    }
 
-}
+  }
