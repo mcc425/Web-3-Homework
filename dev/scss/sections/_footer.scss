@@ -10,6 +10,10 @@
          .item {
            padding: 50px;
            background-color: #F9DDDD;
+
       }
+      @include md{
+        grid-template-columns: auto auto auto;
+    }
       
 }

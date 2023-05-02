@@ -2,6 +2,7 @@
     display: grid;
 
     grid-template-columns: 16px 1fr 16px;
+    grid-template-columns: 100%;
     grid-template-areas: 
         ". content .";
     
@@ -17,4 +18,16 @@
             padding: 50px;
           }
           
-}
+        @include md{
+            grid-template-columns: 20% 80%;
+  
+        }    
+        @include lg{
+            grid-template-columns: 50% 50%;
+        }
+    
+        @include xl{
+             grid-template-columns: 50% 50%;
+         }
+        
+        }

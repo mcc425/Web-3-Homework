@@ -11,4 +11,18 @@
         padding: 50px;
       }
       
+    @include md{
+
+      margin: 0 40px;
+      ul{ display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 8px
+      }
+  }
+  @include lg{
+      margin: 0 40px;
+      ul{ grid-template-columns: repeat(5,1fr);
+
+      } 
+    }
 }
