@@ -1,7 +1,7 @@
 #heroimg{
-  
+  display: grid;
+    grid-template-columns: 1fr;
 }
-
 
 #hero{
     display: grid;
@@ -27,7 +27,6 @@
       }
 
      }
-          
 
         @include md{
             grid-template-columns: 1fr 1fr;

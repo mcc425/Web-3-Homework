@@ -378,6 +378,11 @@ textarea {
 /* =============
     Footer
 ============= */
+#heroimg {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 #hero {
   display: grid;
   grid-template-columns: 16px 1fr 16px;
@@ -509,8 +514,10 @@ textarea {
   width: 320px;
   height: 643px;
 }
-#footer .item {
-  padding: 50px;
+#footer button {
+  background-color: #F0C4C4;
+}
+#footer nav {
   background-color: #F9DDDD;
 }
 @media (min-width: 768px) {
