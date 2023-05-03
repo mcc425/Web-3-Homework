@@ -331,6 +331,20 @@ template {
 /* =============
     Base
 ============= */
+img {
+  width: 100%;
+}
+
+.icon {
+  width: auto;
+  height: 16px;
+}
+
+.circle-icon {
+  width: 113px;
+  height: auto;
+}
+
 /* =============
     Typography
 ============= */
@@ -368,62 +382,70 @@ textarea {
   display: grid;
   grid-template-columns: 16px 1fr 16px;
   grid-template-columns: 100%;
-  grid-template-areas: ". content .";
 }
-#hero .grid-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  width: 320px;
-  height: 419px;
-}
-#hero .item {
-  background-color: #F9DDDD;
+#hero article {
   padding: 50px;
+}
+#hero article h3 {
+  color: black;
+}
+#hero article h5 {
+  color: black;
+}
+#hero article.first {
+  background-color: #F0C4C4;
+}
+#hero article.second {
+  background-color: #F9DDDD;
 }
 @media (min-width: 768px) {
   #hero {
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
   }
 }
 @media (min-width: 1024px) {
   #hero {
+    grid-template-columns: 1fr 1fr;
     grid-template-columns: 50% 50%;
   }
 }
 @media (min-width: 1200px) {
   #hero {
+    grid-template-columns: 1fr 1fr;
     grid-template-columns: 50% 50%;
   }
 }
 
-#subHero .grid-container {
+#subHero {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  width: 320px;
-  height: 251px;
+  grid-template-columns: 1fr;
 }
-#subHero .item {
-  background-color: #C9E4E5;
+#subHero article {
   padding: 50px;
+}
+#subHero article h3 {
+  color: black;
+}
+#subHero article img {
+  width: 50%;
+}
+#subHero article.left {
+  background-color: #C9E4E5;
+}
+#subHero article.right {
+  background-color: #C9E4E5;
 }
 @media (min-width: 768px) {
   #subHero {
-    margin: 0 40px;
-  }
-  #subHero ul {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 8px;
+    grid-template-columns: 50% 50%;
   }
 }
 @media (min-width: 1024px) {
   #subHero {
-    margin: 0 40px;
-  }
-  #subHero ul {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
   }
 }
 

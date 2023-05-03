@@ -21,7 +21,7 @@
       @include md{
        ul{
          display: grid;
-         grid-template-columns: 1fr 1fr;
+         grid-template-columns: $twocolumn;
         grid-gap: 4px;
    
     }
@@ -30,7 +30,7 @@
       @include lg{
         ul{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-columns: $threecolumn;
             grid-gap: 4px;
         }  
       }

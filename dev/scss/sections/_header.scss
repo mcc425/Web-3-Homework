@@ -1,15 +1,17 @@
 #header{
-    .grid-container {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         width: 320px;
         height: 143px;
-      }
-      
-      .item {
         background-color: #F9DDDD;
+
+      .article{
         padding: 50px;
+        .logo{
+          background-color: #C9E4E5;
+          
+        }
+       
       }
       
 }

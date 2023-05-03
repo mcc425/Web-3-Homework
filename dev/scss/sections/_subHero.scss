@@ -1,28 +1,37 @@
 #subHero{
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        width: 320px;
-        height: 251px;
-      }  
-      .item {
+   display: grid;
+        grid-template-columns: 1fr;
+
+     article{
+      padding: 50px;
+
+        h3{
+          color:black;
+        }
+
+        img{
+          width: 50%;
+        }
+
+      &.left{
         background-color: #C9E4E5;
-        padding: 50px;
       }
-      
-    @include md{
 
-      margin: 0 40px;
-      ul{ display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-gap: 8px
+      &.right{
+        background-color: #C9E4E5
       }
-  }
-  @include lg{
-      margin: 0 40px;
-      ul{ grid-template-columns: repeat(5,1fr);
 
-      } 
     }
-}
+     
+
+    @include md{
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 50% 50%;
+       }
+      
+
+    @include lg{
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 50% 50%;
+      }
+    }
