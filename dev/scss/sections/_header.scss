@@ -1,17 +1,17 @@
 #header{
         display: grid;
         grid-template-columns: 1fr;
-        width: 320px;
-        height: 143px;
         background-color: #F9DDDD;
-
-      .article{
         padding: 50px;
-        .logo{
-          background-color: #C9E4E5;
-          
-        }
-       
+  
+  article{
+      &.logo{
+        padding: 10px;
+     
       }
-      
+        &.icon{
+          background-color: #C9E4E5;      
+     }
+    
+   }    
 }

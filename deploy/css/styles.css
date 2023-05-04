@@ -428,6 +428,7 @@ textarea {
 }
 #subHero article {
   padding: 50px;
+  margin: 5%;
 }
 #subHero article h3 {
   color: black;
@@ -437,9 +438,19 @@ textarea {
 }
 #subHero article.left {
   background-color: #C9E4E5;
+  max-height: 118px;
+}
+#subHero article.left img {
+  height: 89px;
+  width: auto;
 }
 #subHero article.right {
   background-color: #C9E4E5;
+  max-height: 118px;
+}
+#subHero article.right img {
+  height: 89px;
+  width: auto;
 }
 @media (min-width: 768px) {
   #subHero {
@@ -454,65 +465,51 @@ textarea {
   }
 }
 
-#new .grid-container {
+#new {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  width: 320px;
-  height: 2006px;
+  grid-template-columns: 1fr;
 }
-#new li {
-  list-style: none;
-  padding-top: 40px;
-  padding-bottom: 100px;
-  margin-bottom: 15px;
-  width: 100%;
+@media (min-width: 768px) {
+  #new {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  #new {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  #new {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
-#gallery .grid-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  width: 320px;
-  height: 836px;
-  gap: 16px;
+#gallery {
+  grid-template-columns: 1fr;
 }
-#gallery .item {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   #gallery {
-    grid-template-columns: 1fr;
-  }
-}
-@media (min-width: 768px) {
-  #gallery ul {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 4px;
   }
 }
 @media (min-width: 1024px) {
-  #gallery ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 4px;
+  #gallery {
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 1200px) {
   #gallery {
-    grid-template-columns: 70% auto auto;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-#footer .grid-container {
+#footer {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  width: 320px;
-  height: 643px;
+  grid-template-columns: 1fr;
 }
 #footer button {
   background-color: #F0C4C4;
@@ -522,6 +519,16 @@ textarea {
 }
 @media (min-width: 768px) {
   #footer {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  #footer {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  #footer {
+    grid-template-columns: 1fr;
   }
 }

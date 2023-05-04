@@ -4,6 +4,7 @@
 
      article{
       padding: 50px;
+      margin: 5%;
 
         h3{
           color:black;
@@ -15,14 +16,22 @@
 
       &.left{
         background-color: #C9E4E5;
+        max-height: 118px;
+        img{
+          height: 89px;
+          width: auto;
+        }
       }
 
       &.right{
-        background-color: #C9E4E5
+        background-color: #C9E4E5;
+        max-height: 118px;
+        img{
+          height: 89px;
+          width: auto;
+        }
       }
-
     }
-     
 
     @include md{
         grid-template-columns: 1fr 1fr;

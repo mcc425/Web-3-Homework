@@ -1,22 +1,26 @@
 #footer{
-    .grid-container {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        width: 320px;
-        height: 643px;
-      }
+        grid-template-columns: 1fr;
+        
       
       button{
         background-color: #F0C4C4;
       }
 
-         nav {
+         nav{
            background-color: #F9DDDD;
 
       }
       @include md{
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 1fr;
     }
+
+    @include lg{
+      grid-template-columns: 1fr;
+  }
+
+  @include xl{
+    grid-template-columns: 1fr;
+}
       
 }
