@@ -1,17 +1,26 @@
 #header{
         display: grid;
         grid-template-columns: 1fr;
+  
+  section{
+      &.logo{
         background-color: #F9DDDD;
         padding: 50px;
-  
-  article{
-      &.logo{
-        padding: 10px;
+        max-height: 175px;
+        max-width: auto;
      
       }
-        &.icon{
-          background-color: #C9E4E5;      
+        &.search{
+          img{
+            background-color: #C9E4E5; 
+          } 
      }
     
    }    
-}
+
+   @include md{
+
+   }
+
+
+ }

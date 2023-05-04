@@ -378,6 +378,19 @@ textarea {
 /* =============
     Footer
 ============= */
+#header {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#header section.logo {
+  background-color: #F9DDDD;
+  padding: 50px;
+  max-height: 175px;
+  max-width: auto;
+}
+#header section.search img {
+  background-color: #C9E4E5;
+}
 #heroimg {
   display: grid;
   grid-template-columns: 1fr;
