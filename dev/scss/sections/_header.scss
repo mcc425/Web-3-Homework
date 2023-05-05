@@ -1,26 +1,54 @@
-#header{
-        display: grid;
-        grid-template-columns: 1fr;
-  
-  section{
-      &.logo{
-        background-color: #F9DDDD;
-        padding: 50px;
+#header {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  section {
+    padding: 24px;
+    justify-content: center;
+
+    &.logo {
+      background-color: #F9DDDD;
+      padding: 50px;
+
+      img {
         max-height: 175px;
         max-width: auto;
-     
       }
-        &.search{
-          img{
-            background-color: #C9E4E5; 
-          } 
-     }
-    
-   }    
+    }
 
-   @include md{
+    &.search {
+      text-align: center;
+    }
 
-   }
+    button {
+      background-color: #C9E4E5;
+      border-radius: 3.5px;
+      padding: 5px 10px;
+      border: none;
+    }
+
+    input {
+      border: none;
+      width: 100%;
+      border-bottom: 1px solid black
+    }
+
+    form#search {
+      justify-content: space-between;
+      gap: 10px;
+      display: flex;
+      align-items: stretch;
+    }
+  }
+
+  @include md {
+    &.logo {
+      img{
+        display: inline;
+        padding: 100px;
+      }
+    }
 
 
- }
+  }
+}

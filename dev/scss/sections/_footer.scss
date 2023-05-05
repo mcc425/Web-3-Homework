@@ -1,26 +1,27 @@
-#footer{
-        display: grid;
-        grid-template-columns: 1fr;
-        
-      
-      button{
-        background-color: #F0C4C4;
-      }
+#footer {
+  display: grid;
+  grid-template-columns: 1fr;
 
-         nav{
-           background-color: #F9DDDD;
 
-      }
-      @include md{
-        grid-template-columns: 1fr;
-    }
-
-    @include lg{
-      grid-template-columns: 1fr;
+  button {
+    background-color: #F0C4C4;
   }
 
-  @include xl{
+  nav {
+    background-color: #F9DDDD;
+
+  }
+
+  @include md {
     grid-template-columns: 1fr;
-}
-      
+  }
+
+  @include lg {
+    grid-template-columns: 1fr;
+  }
+
+  @include xl {
+    grid-template-columns: 1fr;
+  }
+
 }

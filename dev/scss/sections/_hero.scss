@@ -1,46 +1,61 @@
-#heroimg{
+#heroimg {
   display: grid;
-    grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
 }
 
-#hero{
-    display: grid;
-    grid-template-columns: 16px 1fr 16px;
-    grid-template-columns: 100%;
-  
-     article {
-            padding: 50px;
+#hero {
+  display: grid;
+  grid-template-columns: 16px 1fr 16px;
+  grid-template-columns: 100%;
 
-            h3{
-              color:black;
-            }
-            h5{
-              color:black;
-            }
-
-      &.first{
-        background-color: #F0C4C4;
-      }
-
-      &.second{
-        background-color: #F9DDDD
-      }
-
-     }
-
-        @include md{
-            grid-template-columns: 1fr 1fr;
-            grid-template-columns: 40% 60%;
-  
-        }    
-        @include lg{
-            grid-template-columns: 1fr 1fr;
-            grid-template-columns: 50% 50%;
-        }
+  article {
+    padding: 50px;
     
-        @include xl{
-             grid-template-columns: 1fr 1fr;
-             grid-template-columns: 50% 50%;
-         }
-        
-        }
+    h3 {
+      color: black;
+    }
+
+    h5 {
+      color: black;
+    }
+
+    &.first {
+      display:flex;
+      background-color: #F0C4C4;
+      height: 68px;
+      flex-direction: column;
+    }
+
+    &.second {
+      display:flex;
+      background-color: #F9DDDD;
+      height: 90px;
+      flex-direction: column
+    }
+  }
+
+  @include md {
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
+    &.first,&.second {
+      height: 80px;
+    }
+  }
+
+  @include lg {
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    &.first,&.second {
+      height: 80px;
+    }
+  }
+
+  @include xl {
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    &.first,&.second {
+      height: 80px;
+    }
+  }
+
+}
