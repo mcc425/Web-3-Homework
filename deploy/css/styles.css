@@ -449,7 +449,7 @@ textarea {
 #hero article.second {
   display: flex;
   background-color: #F9DDDD;
-  height: 90px;
+  height: 68px;
   flex-direction: column;
 }
 @media (min-width: 768px) {
@@ -484,37 +484,44 @@ textarea {
   display: grid;
   grid-template-columns: 1fr;
 }
+#subHero button {
+  background-color: white;
+  border: none;
+  width: 99px;
+  height: 27px;
+}
 #subHero article {
-  display: flex;
-  padding: 50px;
   margin: 5%;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 #subHero article h3 {
-  color: black;
+  border: none;
+  width: 100%;
 }
 #subHero article img {
-  width: 50%;
+  max-width: 85px;
+  max-height: 85px;
+  float: right;
 }
 #subHero article.left {
   background-color: #C9E4E5;
-  max-height: 118px;
-}
-#subHero article.left img {
-  height: 89px;
-  width: auto;
+  height: 118px;
 }
 #subHero article.right {
   background-color: #C9E4E5;
-  max-height: 118px;
-}
-#subHero article.right img {
-  height: 89px;
-  width: auto;
+  height: 118px;
 }
 @media (min-width: 768px) {
   #subHero {
     grid-template-columns: 1fr 1fr;
     grid-template-columns: 50% 50%;
+  }
+  #subHero img {
+    width: 113px;
+    height: 113px;
+    float: right;
   }
 }
 @media (min-width: 1024px) {
@@ -522,47 +529,142 @@ textarea {
     grid-template-columns: 1fr 1fr;
     grid-template-columns: 50% 50%;
   }
+  #subHero img {
+    width: 113px;
+    height: 113px;
+    float: right;
+  }
+}
+
+#whatsNew {
+  grid-template-columns: 1fr;
+  color: black;
 }
 
 #new {
   display: grid;
   grid-template-columns: 1fr;
 }
+#new button {
+  background-color: #F0C4C4;
+  padding: 3px 7px;
+  border: none;
+}
 @media (min-width: 768px) {
   #new {
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 1fr 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "1 2" "3 4" "5";
+    gap: 16px;
+    justify-content: center;
+    align-content: center;
   }
 }
 @media (min-width: 1024px) {
   #new {
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "1 2 3" "4 5";
+    gap: 20px;
+    margin: 17px;
+    justify-content: center;
+    align-content: center;
   }
 }
 @media (min-width: 1200px) {
   #new {
     grid-template-columns: auto auto auto;
     grid-template-rows: 1fr 1fr;
+    padding: 225px;
+    justify-content: center;
+    align-content: center;
   }
 }
 
 #gallery {
   grid-template-columns: 1fr;
 }
+#gallery #img3 {
+  display: none;
+}
+#gallery #img1 {
+  display: none;
+}
+#gallery #img3full {
+  display: none;
+}
 @media (min-width: 768px) {
   #gallery {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
+  }
+  #gallery #img2 {
+    display: none;
+  }
+  #gallery #img1full {
+    display: inline;
+  }
+  #gallery #img1 {
+    display: none;
+  }
+  #gallery #img3full {
+    display: inline;
   }
 }
 @media (min-width: 1024px) {
   #gallery {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-columns: 62.5% 37.5%;
+  }
+  #gallery #img3full {
+    display: none;
+  }
+  #gallery #img1full {
+    display: inline;
+  }
+  #gallery #img2 {
+    display: inline;
   }
 }
 @media (min-width: 1200px) {
   #gallery {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img2 img3" "img2 img1";
+  }
+  #gallery #img3 {
+    display: inline;
+  }
+  #gallery #img1 {
+    display: inline;
+  }
+  #gallery #img1.img3 {
+    display: flex;
+    flex-direction: column;
+  }
+  #gallery #img2 {
+    display: inline;
+  }
+  #gallery #img1full {
+    display: none;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1200px) {
+  #gallery #img2 {
+    grid-area: img2;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1200px) {
+  #gallery #img2 #img1 {
+    grid-area: img1;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1200px) {
+  #gallery #img2 #img1 #img3 {
+    grid-area: img3;
   }
 }
 
@@ -572,6 +674,10 @@ textarea {
 }
 #footer button {
   background-color: #F0C4C4;
+  border: none;
+}
+#footer input {
+  border: none;
 }
 #footer nav {
   background-color: #F9DDDD;

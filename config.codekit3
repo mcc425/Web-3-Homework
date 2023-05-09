@@ -185,6 +185,17 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/img1full.webp" : {
+      "ft" : 8388608,
+      "iS" : 161040,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/img1full.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/deploy\/img\/img2.png" : {
       "ft" : 32768,
       "iS" : 243733,
@@ -207,6 +218,19 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/img3full.jpg" : {
+      "ft" : 16384,
+      "iS" : 381745,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/img3full.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -388,6 +412,14 @@
       "oAP" : "\/dev\/content\/subHero.html",
       "oF" : 0
     },
+    "\/dev\/content\/whatsNew" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/whatsNew",
+      "oF" : 0
+    },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -410,6 +442,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/global\/header.html",
+      "oF" : 0
+    },
+    "\/dev\/global\/scripts.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/global\/scripts.html",
       "oF" : 0
     },
     "\/dev\/global\/scripts.kit" : {
@@ -685,6 +725,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_subHero.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_whatsNew.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_whatsNew.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
