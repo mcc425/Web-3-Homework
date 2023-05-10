@@ -1,102 +1,103 @@
 #gallery {
+  display: grid;
   grid-template-columns: 1fr;
 
-  #img3 {
-    display: none;
-  }
-
-  #img1 {
-    display: none;
-  }
-
-  #img3full {
-    display: none;
-  }
-
-  @include md {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-columns: 50% 50%;
-
-    #img2 {
-      display: none;
-    }
-
-    #img1full {
-      display: inline;
-    }
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "img2"
+      "img1full";
 
     #img1 {
-      display: none;
-    }
+      grid-area: img1;
 
-    #img3full {
-      display: inline;
-    }
-  }
-
-  @include lg {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-columns: 62.5% 37.5%;
-
-    #img3full {
-      display: none;
-    }
-
-    #img1full {
-      display: inline;
+      height: 400px;
+      background-image: url(../img/img1.png);
+      background-size: cover;
+      background-position: center center;
     }
 
     #img2 {
-      display: inline;
-    }
-  }
+      grid-area: img2;
 
-  @include xl {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+      height: 400px;
+      background-image: url(../img/img2.png);
+      background-position: center center;
+      background-size: cover;
+    }
 
     #img3 {
-      display: inline;
+      grid-area: img3;
+
+      height: 400px;
+      background-image: url(../img/img3.jpg);
+      background-size: cover;
+      background-position: center center;
     }
 
-    #img1 {
-      display: inline;
-    }
+    #img3full {
+      grid-area: img3full;
 
-    #img1.img3 {
-      display: flex;
-      flex-direction: column;
-    }
-
-    #img2 {
-      display: inline;
+      height: 481px;
+      background-image: url(../img/img3full.jpg);
+      background-size: cover;
+      background-position: center center;
     }
 
     #img1full {
-      display: none;
+      grid-area: img1full;
+
+      height: 481px;
+      background-image: url(../img/img1full.webp);
+      background-size: cover;
+      background-position: center center;
     }
 
-    grid-template-areas: 
-    "img2 img3"
-    "img2 img1";
+    @include md {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 50% 50%;
+      grid-template-areas:
+        "img3full img1full";
 
-    #img2 {
-      @include xl {
-        grid-area: img2;
+      #img3full,
+      #img1full {
+        height: 594px;
       }
+    }
+
+    @include lg {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 62.5% 37.5%;
+      grid-template-areas:
+        "img2 img1full";
+
+      #img2 {
+        height: 593px;
+      }
+    }
+
+    @include xl {
+      display: grid;
+      padding: 30px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "img1 img2"
+        "img1 img3";
+
+      height: auto;
 
       #img1 {
-        @include xl {
-          grid-area: img1;
-        }
+        height: 752px;
+      }
 
-        #img3 {
-          @include xl {
-            grid-area: img3;
-          }
-        }
+      #img2,#img3 {
+        height: 376px;
       }
     }
   }

@@ -41,7 +41,9 @@
   @include md {
     grid-template-columns: 1fr 1fr;
     grid-template-columns: 50% 50%;
-    
+    display:flex;
+    justify-content: center;
+
     img {
       width: 113px;
       height: 113px;
@@ -52,6 +54,30 @@
   @include lg {
     grid-template-columns: 1fr 1fr;
     grid-template-columns: 50% 50%;
+    display:flex;
+    justify-content: center;
+
+    .right,.left{
+      height: 145px;
+      width: 489px;
+    }
+
+    img {
+      width: 113px;
+      height: 113px;
+      float: right;
+    }
+  }
+  @include xl {
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    display:flex;
+    justify-content: center;
+
+    .right,.left{
+      height: 145px;
+      width: 489px;
+    }
 
     img {
       width: 113px;
