@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+   
     <link rel="stylesheet" href="css/styles.css">
     <title>Homework Week 2</title>
-    
+
 
 </head>
 
 <body>
     <header id="header">
         <section class="logo">
-            <img src="img/Logo.png" alt="header logo">
+            <img class="fklogo"src="img/Logo.png" alt="header logo">
         </section>
     
         <section class="search">
@@ -28,34 +32,40 @@
     </header>
     <section id="heroimg">
             <img src="img/hero.png" alt="hero">
-         </section>
-        
-         <section id="hero">
-            <article class="first">
-             <h3> Custom Sets Just for You<img class="icon" src="img/icons/arrow.png" alt="arrow icon"></h3>
-                <h5> From Our Favorite Collections </h5>
-            </article>
-        
-            <article class="second">
-             <h3> Build Your Own Gift Sets<img class="icon" src="img/icons/arrow.png" alt="arrow icon"></h3> 
-                <h5> Or Shop our Best Sellers </h5>
-            </article>
         </section>
         
+        <section id="hero">
+            <aside>
+                <div>
+                    <h4> Custom Sets Just for You</h4>
+                    <h5> From Our Favorite Collections </h5>
+                </div>
+                <img class="icon" src="img/icons/arrow.png" alt="arrow icon">
+            </aside>
         
+            <article>
+                <div>
+                    <h5> Build Your Own Gift Sets</h5>
+                    <h5> Or Shop our Best Sellers </h5>
+                </div>
+                <img class="icon" src="img/icons/arrow.png" alt="arrow icon">
+            </article>
+        </section>
     <section id="subHero">
                 <article class="left">
-                    <h3> Get to Know Us
-                        <img class="circle-icon" src="img/icon1.png" alt="icon circle1">
-                    </h3>
-                    <h6> <button href="#">Start Here</button> </h6>
+                    <div>
+                        <h3> Get to Know Us </h3>
+                        <h6> <button href="#">Start Here</button> </h6>
+                    </div>
+                    <img class="circle-icon" src="img/icon1.png" alt="icon circle1">
                 </article>
             
                 <article class="right">
-                    <h3> Moonlight Mermaid
-                        <img class="circle-icon" src="img/icon2.png" alt="icon circle2">
-                    </h3>
-                    <h6> <button href="#"> Pre-Order</button> </h6>
+                    <div>
+                        <h3> Moon Mermaid </h3>
+                        <h6> <button href="#"> Pre-Order</button> </h6>
+                    </div>
+                    <img class="circle-icon" src="img/icon2.png" alt="icon circle2">
                 </article>
             </section>
     <section id="gallery">    
@@ -67,63 +77,80 @@
                       <li id="img1full">
                 </ul>
                 </section>
-    <section id="new">
-                          
-                                <article class="1">
-                                    <h3> <img src="img/new1.png" alt="1"><br> New Chocolate Lippies  </h3> 
-                                     <p> Inspired by the British plaid, a combination of gold lattice, and lace elements of clothing is the core design focus of the series</p>
-                                         <button href="#">Read More</button>
-                                 </article>
-                            
-                                <article class="2">
-                                    <h3> <img src="img/new2.png" alt="2"><br> The Chocolate Wonder-Shop </h3> 
-                                     <p> Inspired by the British plaid, a combination of gold lattice, and lace elements of clothing is the core design focus of the series</p>
-                                        <button href="#">Read More</button>
-                                 </article>
-                            
-                                <article class="3">
-                                    <h3> <img src="img/new3.png" alt="3"><br> Strawberry Rococo Collection </h3> 
-                                     <p> Inspired by the classic elements and color ways of the 18th century Rococo era. A combination of strawberry dessert and vintage rococo style.</p>
-                                        <button href="#">Read More</button>
-                                 </article>
-                            
-                                <article class="4">
-                                    <h3> <img src="img/new4.png" alt="4"><br> Strawberry Rococo Feature Gift Set </h3> 
-                                     <p> Inspired by the classic elements and color ways of the 18th century Rococo era. A combination of strawberry dessert and vintage rococo style.</p>
-                                        <button href="#">Read More</button>
-                                 </article>
-                        
-                                <article class="5">
-                                    <h3> <img src="img/new5.png" alt="5"><br> Magical Circus </h3> 
-                                     <p> New gorgeous magic style! A winter fantasy adventure leads you to a circus with a girlish heart! Metallic designs in winter colors.</p>
-                                        <button href="#">Read More</button>
-                                </article>
-                          
+    <div id="title">
+                        <h7> What's New </h7>
+                    </div>
+                    
+                    <section id="new">
+                        <aside>
+                            <article class="1">
+                                <h2> <img src="img/new1.png" alt="1"><br> New Chocolate Lippies </h2>
+                                <p> Inspired by the British plaid, a combination of gold lattice, and lace elements of clothing is the core
+                                    design focus of the series</p>
+                                <a href="https://flowerknows.co/apps/bundles/bundle/131256">Read More</a>
+                            </article>
+                    
+                            <article class="2">
+                                <h2> <img src="img/new2.png" alt="2"><br> Chocolate Wonder-Shop </h2>
+                                <p> Inspired by the British plaid, a combination of gold lattice, and lace elements of clothing is the core
+                                    design focus of the series</p>
+                                <a href="https://flowerknows.co/collections/chocolate-wonder-shop">Read More</a>
+                            </article>
+                    
+                            <article class="3">
+                                <h2> <img src="img/new3.png" alt="3"><br> Strawberry Rococo </h2>
+                                <p> Inspired by the classic elements and color ways of the 18th century Rococo era. A combination of
+                                    strawberry dessert and vintage rococo style.</p>
+                                <a href="https://flowerknows.co/collections/strawberry-rococo">Read More</a>
+                            </article>
+                    
+                            <article class="new4">
+                                <h2> <img src="img/new4.png" alt="4"><br> Strawberry Rococo Set </h2>
+                                <p> Inspired by the classic elements and color ways of the 18th century Rococo era. A combination of
+                                    strawberry dessert and vintage rococo style.</p>
+                                <a href="https://flowerknows.co/apps/bundles/bundle/131260">Read More</a>
+                            </article>
+                    
+                            <article class="new5">
+                                <h2> <img src="img/new5.png" alt="5"><br> Magical Circus </h2>
+                                <p> New gorgeous magic style! A winter fantasy adventure leads you to a circus with a girlish heart!
+                                    Metallic designs in winter colors.</p>
+                                <a href="https://flowerknows.co/collections/circus">Read More</a>
+                            </article>
+                        </aside>
+                    
                     
                     </section>
 <section id="footer">
                         <nav>
-                            <h5>Contact</h5>
+                            <article class="contact">
+                                <h5>Contact</h5>
+                                <h6><img class="icon" src="img/icons/call.png" alt="call icon"> support@flowerknows.co</h6>
+                                <h6><img class="icon" src="img/icons/chat.png" alt="chat">Monday - Sunday 17:30 PM - 1:30 AM (+1) PST</h6>
                     
-                            <h6><img class="icon" src="img/icons/call.png" alt="call icon"> support@flowerknows.co</h6>
-                            <h6><img class="icon" src="img/icons/chat.png" alt="chat">Monday - Sunday 17:30 PM - 1:30 AM (+1) PST</h6>
+                                <h6><img class="icon" src="img/icons/call.png" alt="call icon"> support@flowerknows.co</h6>
+                                <h6><img class="icon" src="img/icons/chat.png" alt="chat">Monday - Sunday 17:30 PM - 1:30 AM (+1) PST</h6>
                     
-                            <h6><img class="icon" src="img/icons/call.png" alt="call icon"> support@flowerknows.co</h6>
-                            <h6><img class="icon" src="img/icons/chat.png" alt="chat">Monday - Sunday 17:30 PM - 1:30 AM (+1) PST</h6>
+                                <h6><img class="icon" src="img/icons/call.png" alt="call icon"> support@flowerknows.co</h6>
+                                <h6><img class="icon" src="img/icons/chat.png" alt="chat">Monday - Sunday 17:30 PM - 1:30 AM (+1) PST</h6>
+                            </article>
                     
-                            <h6><img class="icon" src="img/icons/call.png" alt="call icon"> support@flowerknows.co</h6>
-                            <h6><img class="icon" src="img/icons/chat.png" alt="chat">Monday - Sunday 17:30 PM - 1:30 AM (+1) PST</h6>
+                            <article class="newsletter">
+                             <div>
+                                <h5> Newsletter Sign Up</h5>
+                                <form action="#">
+                                    <input type="email" placeholder="Email address"></form>
+                                </div>
+                                    <button>Sign up</button>
+                            </article>
                     
-                            <h5>Newsletter Sign Up</h5>
-                            <form action="#">
-                                <input type="email" placeholder="Email address">
-                                <button>Sign up</button>
-                    
+                            <article class="follow">
                                 <h5>Follow Us</h5>
-                                <img class="icon" src="img/icons/youtube.png" alt="youtube icon"><img class="icon"
-                                    src="img/icons/twitter.png" alt="twitter icon"><img class="icon" src="img/icons/instagram.png"
-                                    alt="instagram icon"><img class="icon" src="img/icons/facebook.png" alt="facebook icon">
-                    
+                                <img class="icon" src="img/icons/youtube.png" alt="youtube icon">
+                                <img class="icon" src="img/icons/twitter.png" alt="twitter icon">
+                                <img class="icon" src="img/icons/instagram.png" alt="instagram icon">
+                                <img class="icon" src="img/icons/facebook.png" alt="facebook icon">
+                            </article>
                         </nav>
                     </section>
 </body>

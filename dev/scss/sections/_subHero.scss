@@ -1,7 +1,11 @@
 #subHero {
   display: grid;
   grid-template-columns: 1fr;
-  
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  gap: 16px;
 
   button {
     background-color: white;
@@ -11,78 +15,46 @@
   }
 
   article {
-    margin: 5%;
-    flex-direction: column;
-    padding-left: 10px;
-    padding-right: 10px;
-
-    h3 {
-      border: none;
-      width: 100%;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #C9E4E5;
+    height: auto;
+    width: 100%;
 
     img {
       max-width: 85px;
       max-height: 85px;
-      float: right;
-    }
-
-    &.left {
-      background-color: #C9E4E5;
-      height: 118px;
-    }
-
-    &.right {
-      background-color: #C9E4E5;
-      height: 118px;
     }
   }
 
   @include md {
     grid-template-columns: 1fr 1fr;
     grid-template-columns: 50% 50%;
-    display:flex;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-
-    img {
-      width: 113px;
-      height: 113px;
-      float: right;
+    margin-left: 15px;
+    margin-right: 15px;
+    article{
+      height:161px;
     }
   }
 
   @include lg {
     grid-template-columns: 1fr 1fr;
     grid-template-columns: 50% 50%;
-    display:flex;
-    justify-content: center;
-
-    .right,.left{
-      height: 145px;
-      width: 489px;
-    }
-
-    img {
-      width: 113px;
-      height: 113px;
-      float: right;
+    article{
+      height:145px;
     }
   }
+
   @include xl {
     grid-template-columns: 1fr 1fr;
     grid-template-columns: 50% 50%;
-    display:flex;
-    justify-content: center;
-
-    .right,.left{
-      height: 145px;
-      width: 489px;
-    }
-
-    img {
-      width: 113px;
-      height: 113px;
-      float: right;
+    margin: 24px 225px 24px;
+    article{
+      height:161px;
     }
   }
 }

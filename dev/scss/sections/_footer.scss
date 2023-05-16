@@ -1,32 +1,70 @@
 #footer {
-  display: grid;
-  grid-template-columns: 1fr;
+  background-color: #F9DDDD;
+  display: flex;
+  flex-direction: column;
+  padding-left: 17px;
 
 
   button {
     background-color: #F0C4C4;
     border: none;
+    height: 27x;
+    width: 76px;
   }
 
   input {
     border: none;
+    height: 50px;
+    width: 287px;
   }
 
-  nav {
-    background-color: #F9DDDD;
+  .follow {
+    img {
+      height: 22.4px;
+      width: 22.4px;
+    }
+  }
 
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 17px;
+    gap: 16px;
+
+    div {
+      display: flex;
+      flex-direction: column
+    }
   }
 
   @include md {
-    grid-template-columns: 1fr;
+    nav {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "contact newsletter"
+        "contact follow";
+    }
   }
 
   @include lg {
-    grid-template-columns: 1fr;
+    nav {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 25% 50% 25%;
+      grid-template-areas:
+        "contact newsletter follow";
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-right: 17px;
+    }
   }
 
   @include xl {
     grid-template-columns: 1fr;
+    padding-left: 50px;
+    padding-right: 50px;
   }
-
 }

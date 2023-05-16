@@ -3,20 +3,22 @@
   grid-template-columns: 1fr;
 
   section {
-    padding: 24px;
     justify-content: center;
 
     &.logo {
       background-color: #F9DDDD;
-      padding: 50px;
+      height: 77px;
+    }
 
-      img {
-        max-height: 175px;
-        max-width: auto;
-      }
+    .fklogo {
+      height: 50%;
+      width: auto;
+      margin-top:17px;
+      margin-left: 50px;
     }
 
     &.search {
+      padding: 24px;
       text-align: center;
     }
 
@@ -30,7 +32,8 @@
     input {
       border: none;
       width: 100%;
-      border-bottom: 1px solid black
+      border-bottom: 1px solid #93A8AC;
+
     }
 
     form#search {
@@ -42,11 +45,44 @@
   }
 
   @include md {
-    &.logo {
-      img{
-        display: inline;
-        padding: 100px;
-      }
+    .logo {
+      width: auto;
+      height: 89px;
+    }
+
+    .fklogo {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      height: auto;
+    }
+  }
+
+  @include lg {
+    .logo {
+      width: auto;
+      height: 103px;
+    }
+
+    .fklogo {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      height: auto;
+    }
+  }
+
+  @include xl {
+    .logo {
+      width: auto;
+      height: 110px;
+    }
+
+    .fklogo {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      height: auto;
     }
   }
 }

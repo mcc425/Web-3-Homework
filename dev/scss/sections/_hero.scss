@@ -8,46 +8,38 @@
   grid-template-columns: 16px 1fr 16px;
   grid-template-columns: 100%;
 
-  article {
-    padding: 50px;
-    
-    &.first {
-      display:flex;
-      background-color: #F0C4C4;
-      height: 68px;
-      flex-direction: column;
-    }
+  aside {
+    background-color: #F0C4C4;
+    padding-left: 19px;
+    padding-right: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    &.second {
-      display:flex;
-      background-color: #F9DDDD;
-      height: 68px;
-      flex-direction: column
-    }
   }
+
+  article {
+    background-color: #F9DDDD;
+    padding-left: 19px;
+    padding-right: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
 
   @include md {
     grid-template-columns: 1fr 1fr;
     grid-template-columns: 40% 60%;
-    &.first,&.second {
-      height: 80px;
-    }
   }
 
   @include lg {
     grid-template-columns: 1fr 1fr;
     grid-template-columns: 50% 50%;
-    &.first,&.second {
-      height: 80px;
-    }
   }
 
   @include xl {
     grid-template-columns: 1fr 1fr;
     grid-template-columns: 50% 50%;
-    &.first,&.second {
-      height: 80px;
-    }
   }
-
 }

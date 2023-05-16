@@ -14,11 +14,11 @@
 
     #img1 {
       grid-area: img1;
-
       height: 400px;
       background-image: url(../img/img1.png);
       background-size: cover;
       background-position: center center;
+      display: none;
     }
 
     #img2 {
@@ -37,6 +37,7 @@
       background-image: url(../img/img3.jpg);
       background-size: cover;
       background-position: center center;
+      display: none;
     }
 
     #img3full {
@@ -46,6 +47,7 @@
       background-image: url(../img/img3full.jpg);
       background-size: cover;
       background-position: center center;
+      display: none;
     }
 
     #img1full {
@@ -67,6 +69,10 @@
       #img3full,
       #img1full {
         height: 594px;
+        display: inline;
+      }
+      #img1,#img2,#img3{
+        display: none;
       }
     }
 
@@ -79,6 +85,10 @@
 
       #img2 {
         height: 593px;
+        display: inline;
+      }
+      #img1,#img3,#img3full{
+        display: none;
       }
     }
 
@@ -86,19 +96,26 @@
       display: grid;
       padding: 30px;
       grid-template-columns: 1fr 1fr;
+      grid-template-columns: 62.5% 37.5%;
       grid-template-areas:
         "img1 img2"
         "img1 img3";
-
       height: auto;
 
       #img1 {
         height: 752px;
+        display: inline;
       }
 
       #img2,#img3 {
         height: 376px;
+        display: inline;
       }
+
+      #img1full,#img3full{
+        display: none;
+      }
+
     }
   }
 }
