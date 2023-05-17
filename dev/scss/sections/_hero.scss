@@ -16,6 +16,11 @@
     align-items: center;
     justify-content: space-between;
 
+    img {
+      width: 6px;
+      height: 10px;
+    }
+
   }
 
   article {
@@ -25,21 +30,84 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    h5 {
+      line-height: 22px;
+    }
+
+    img {
+      width: 6px;
+      height: 10px;
+    }
   }
 
 
   @include md {
     grid-template-columns: 1fr 1fr;
     grid-template-columns: 40% 60%;
+
+    aside {
+      height: 81px;
+
+      img {
+        width: 8px;
+        height: 14px;
+      }
+    }
+
+    article {
+      height: 81px;
+
+      img {
+        width: 8px;
+        height: 14px;
+      }
+    }
   }
 
   @include lg {
     grid-template-columns: 1fr 1fr;
     grid-template-columns: 50% 50%;
+
+    aside {
+      height: 72px;
+
+      img {
+        width: 8px;
+        height: 14px;
+      }
+    }
+
+    article {
+      height: 72px;
+
+      img {
+        width: 8px;
+        height: 14px;
+      }
+    }
   }
 
   @include xl {
     grid-template-columns: 1fr 1fr;
     grid-template-columns: 50% 50%;
+
+    aside {
+      height: 72px;
+
+      img {
+        width: 8px;
+        height: 14px;
+      }
+    }
+
+    article {
+      height: 72px;
+
+      img {
+        width: 8px;
+        height: 14px;
+      }
+    }
   }
 }
